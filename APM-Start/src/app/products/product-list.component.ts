@@ -61,4 +61,8 @@ export class ProductListComponent implements OnInit {
       return productName.includes(value);
     });
   }
+
+  onClickRating(rating: string): void {
+    this.pageTitle = 'Product List ' + rating;
+  }
 }
